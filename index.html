@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sindura's Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my_pics/me.png" alt="Sindura Reddy Challa" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Sindura Reddy Challa">Sindura Reddy Challa</h1>
+
+          <p class="title">Data Science Master's Student</p>
+        </div>
+      
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:schalla6@umbc.edu" class="contact-link" style="word-break: break-all; white-space: normal; display: inline-block; overflow-wrap: break-word; font-size: 14px;">schalla6@umbc.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+15712461039" class="contact-link">+1 (571) 246-1039</a>
+            </div>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Baltimore, MD, USA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <div class="social-line">
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/challasindurareddy/" class="social-link">
+                <img src="assets/images/Icons/linkedin.png" alt="linkedin" 
+                    data-hover="assets/images/Icons/linkedin-white.png" class="social-image">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://github.com/Sindura06" class="social-link">
+                <img src="assets/images/Icons/github.png" alt="github"
+                    data-hover="assets/images/Icons/github-white.png" class="social-image">
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.instagram.com/justchugh/" class="social-link">
+                <img src="assets/images/Icons/instagram.png" alt="instagram"
+                    data-hover="assets/images/Icons/instagram-white.png" class="social-image">
+              </a>
+            </li>
+            
+          </div>
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certifications</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Start-Up</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello! I'm Sindura Reddy Challa, a passionate Data Science Master's student with a knack for leadership and a strong business mindset. With a relentless drive to innovate and solve problems using technology, I thrive in creating robust solutions that make a real difference.
+          </p>
+          <p>
+            I believe in the power of data to transform ideas into reality and am always eager to tackle new challenges. Whether it's analyzing complex datasets or developing machine learning models, I am committed to delivering solutions that exceed expectations.
+          </p>
+        </section>
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Icons/research.png" alt="research icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research</h4>
+
+                <p class="service-item-text">
+                  My research focuses on optimizing user experience across applications to ensure accessibility and ease of use for diverse demographics, regardless of age or educational background.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Icons/projects.png" alt="projects icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Projects</h4>
+
+                <p class="service-item-text">
+                  I’ve had the privilege of working on diverse projects that highlight my adaptability and practical problem-solving skills. Notably, I developed a real-time Retirement Services application at ADP, streamlining retirement planning for users. These experiences have honed my abilities in web app development, front-end design, and brand identity.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Icons/open_source.png" alt="open source icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Open Source</h4>
+
+                <p class="service-item-text">
+                  Active contributor to open-source initiatives, sharing expertise in web applications and current tech stack. Committed to collaborative development, fostering innovation, and accessible knowledge in the tech community.
+                </p>
+              </div>
+
+            </li>
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/Icons/patent.png" alt="patent icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Patent</h4>
+
+                <p class="service-item-text">
+                  I'm working towards obtaining patents for innovative solutions in the tech space, ensuring that my contributions lead to lasting impacts in the industry.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="resume-section">
+
+          <h3 class="h3 resume-title">Education</h3>
+
+          <ul class="resume-list">
+
+            <li class="resume-item">
+              <div class="resume-content-box">
+                <h4 class="h4 resume-item-title">University of Maryland, Baltimore County</h4>
+                <p class="resume-item-subtitle">Master of Professional Studies, Data Science</p>
+                <p class="resume-item-duration">May 2025</p>
+                <p class="resume-item-gpa">GPA: 3.95/4.0</p>
+                <p class="resume-item-details">Coursework: Introduction to Data Science, Data Management, Ethical Issues in Data Science, Introduction to Machine Learning, Leadership in Data Science, Big Data Processing, Large Language Models, Natural Language Processing.</p>
+              </div>
+            </li>
+
+            <li class="resume-item">
+              <div class="resume-content-box">
+                <h4 class="h4 resume-item-title">Jawaharlal Nehru Technological University</h4>
+                <p class="resume-item-subtitle">Bachelor of Technology, Information Technology</p>
+                <p class="resume-item-duration">May 2023</p>
+                <p class="resume-item-gpa">GPA: 8.52/10.0</p>
+                <p class="resume-item-details">Coursework: Data Structures, Database Management Systems, Operating Systems, Web Technologies, Software Engineering, Cloud Computing, Artificial Intelligence.</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="resume-section">
+
+          <h3 class="h3 resume-title">Experience</h3>
+
+          <ul class="resume-list">
+
+            <li class="resume-item">
+              <div class="resume-content-box">
+                <h4 class="h4 resume-item-title">ADP</h4>
+                <p class="resume-item-subtitle">Software Development Intern</p>
+                <p class="resume-item-duration">June 2023 - August 2023</p>
+                <ul class="resume-item-details">
+                  <li>Developed a real-time Retirement Services application to streamline retirement planning for users.</li>
+                  <li>Collaborated with cross-functional teams to enhance user experience and interface design.</li>
+                  <li>Implemented efficient backend systems to support the application's functionality.</li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="resume-item">
+              <div class="resume-content-box">
+                <h4 class="h4 resume-item-title">Freelance</h4>
+                <p class="resume-item-subtitle">Full Stack Developer</p>
+                <p class="resume-item-duration">January 2022 - May 2023</p>
+                <ul class="resume-item-details">
+                  <li>Developed and maintained web applications for various clients, ensuring high performance and user-friendly interfaces.</li>
+                  <li>Designed and implemented responsive and interactive user interfaces using HTML, CSS, and JavaScript frameworks.</li>
+                  <li>Built robust backend systems using Node.js and Express, integrating with databases like MongoDB and MySQL.</li>
+                </ul>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="resume-section">
+
+          <h3 class="h3 resume-title">Projects</h3>
+
+          <ul class="resume-list">
+
+            <li class="resume-item">
+              <div class="resume-content-box">
+                <h4 class="h4 resume-item-title">Sales Prediction and Inventory Management System</h4>
+                <p class="resume-item-details">Implemented machine learning algorithms to predict sales and manage inventory efficiently, comparing various models to achieve the best accuracy.</p>
+              </div>
+            </li>
+
+            <li class="resume-item">
+              <div class="resume-content-box">
+                <h4 class="h4 resume-item-title">Real-Time Chat Application</h4>
+                <p class="resume-item-details">Developed a real-time chat application using Socket.io and Node.js, enabling instant messaging and seamless communication between users.</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="resume-section">
+
+          <h3 class="h3 resume-title">Certifications</h3>
+
+          <ul class="resume-list">
+
+            <li class="resume-item">
+              <div class="resume-content-box">
+                <h4 class="h4 resume-item-title">Certified Data Scientist</h4>
+                <p class="resume-item-details">Coursera - Issued June 2023</p>
+              </div>
+            </li>
+
+            <li class="resume-item">
+              <div class="resume-content-box">
+                <h4 class="h4 resume-item-title">AWS Certified Solutions Architect</h4>
+                <p class="resume-item-details">Amazon Web Services - Issued May 2023</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-text">
+          <p>
+            Feel free to reach out to me via email or phone. You can also connect with me on LinkedIn, GitHub, or Instagram.
+          </p>
+        </section>
+
+        <ul class="contact-list">
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:schalla6@umbc.edu" class="contact-link">schalla6@umbc.edu</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+              <a href="tel:+15712461039" class="contact-link">+1 (571) 246-1039</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Baltimore, MD, USA</address>
+            </div>
+          </li>
+
+        </ul>
+
+      </article>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
