@@ -2,302 +2,224 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sindura's Portfolio</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindura's Portfolio</title>
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
 
-  <!-- custom css link -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!-- google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- #MAIN -->
-  <main>
+    <!-- #MAIN -->
+    <main>
 
-    <!-- #SIDEBAR -->
-    <aside class="sidebar" data-sidebar>
+        <!-- #SIDEBAR -->
+        <aside class="sidebar" data-sidebar>
 
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/profile.jpeg" alt="Sindura Reddy Challa" width="80">
-        </figure>
+            <div class="sidebar-info">
+                <figure class="avatar-box">
+                    <img src="./assets/images/profile.jpeg" alt="Sindura Reddy Challa" width="80">
+                </figure>
 
-        <div class="info-content">
-          <h1 class="name" title="Sindura Reddy Challa">Sindura Reddy Challa</h1>
-          <p class="title">Data Science Master's Student</p>
+                <div class="info-content">
+                    <h1 class="name" title="Sindura Reddy Challa">Sindura Reddy Challa</h1>
+                    <p class="title">Data Science Master's Student</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+            </div>
+
+            <div class="sidebar-info_more">
+                <div class="separator"></div>
+                <ul class="contacts-list">
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+                            <a href="mailto:schalla6@umbc.edu" class="contact-link">schalla6@umbc.edu</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+                            <a href="tel:+15712461039" class="contact-link">+1 (571) 246-1039</a>
+                        </div>
+                    </li>
+                    <li class="contact-item">
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+                            <address>Baltimore, MD, USA</address>
+                        </div>
+                    </li>
+                </ul>
+                <div class="separator"></div>
+                <ul class="social-list">
+                    <div class="social-line">
+                        <li class="social-item">
+                            <a href="https://www.linkedin.com/in/challasindurareddy/" class="social-link">
+                                <img src="./assets/images/icons/linkedin.png" alt="LinkedIn" data-hover="./assets/images/icons/linkedin-white.png" class="social-image">
+                            </a>
+                        </li>
+                        <li class="social-item">
+                            <a href="https://github.com/Sindura06" class="social-link">
+                                <img src="./assets/images/icons/github.png" alt="GitHub" data-hover="./assets/images/icons/github-white.png" class="social-image">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- #main-content -->
+        <div class="main-content">
+
+            <!-- #NAVBAR -->
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link active" data-nav-link>About</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Projects</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Contact</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- #ABOUT -->
+            <article class="about active" data-page="about">
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+                <section class="about-text">
+                    <p>Hello! I'm Sindura Reddy Challa, a passionate Data Science Master's student with a knack for leadership and a strong business mindset. With a relentless drive to innovate and solve problems using technology, I thrive in creating robust solutions that make a real difference.</p>
+                    <p>I believe in the power of data to transform ideas into reality and am always eager to tackle new challenges. Whether it's analyzing complex datasets or developing machine learning models, I am committed to delivering solutions that exceed expectations.</p>
+                </section>
+            </article>
+
+            <!-- #RESUME -->
+            <article class="resume" data-page="resume">
+                <header>
+                    <h2 class="h2 article-title">Resume</h2>
+                </header>
+                <section class="resume-section">
+                    <h3 class="h3 resume-title">Education</h3>
+                    <ul class="resume-list">
+                        <li class="resume-item">
+                            <div class="resume-content-box">
+                                <h4 class="h4 resume-item-title">University of Maryland, Baltimore County</h4>
+                                <p class="resume-item-subtitle">Master of Professional Studies, Data Science</p>
+                                <p class="resume-item-duration">May 2025</p>
+                                <p class="resume-item-gpa">GPA: 3.95/4.0</p>
+                                <p class="resume-item-details">Coursework: Introduction to Data Science, Data Management, Ethical Issues in Data Science, Introduction to Machine Learning, Leadership in Data Science, Big Data Processing, Large Language Models, Natural Language Processing.</p>
+                            </div>
+                        </li>
+                        <li class="resume-item">
+                            <div class="resume-content-box">
+                                <h4 class="h4 resume-item-title">Jawaharlal Nehru Technological University</h4>
+                                <p class="resume-item-subtitle">Bachelor of Technology, Information Technology</p>
+                                <p class="resume-item-duration">May 2023</p>
+                                <p class="resume-item-gpa">GPA: 8.52/10.0</p>
+                                <p class="resume-item-details">Coursework: Data Structures, Database Management Systems, Operating Systems, Web Technologies, Software Engineering, Cloud Computing, Artificial Intelligence.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Projects Section -->
+                <section class="resume-section">
+                    <h3 class="h3 resume-title">Projects</h3>
+                    <ul class="resume-list">
+                        <li class="resume-item">
+                            <div class="resume-content-box">
+                                <h4 class="h4 resume-item-title">Chatbot Development using GPT-3</h4>
+                                <p class="resume-item-duration">Jul 2024</p>
+                                <ul class="resume-item-details">
+                                    <li>Developed an intelligent chatbot for customer support using OpenAI’s GPT-3.</li>
+                                    <li>Integrated the chatbot into a web application to handle common customer queries and provide automated responses.</li>
+                                    <li>Fine-tuned the model on domain-specific data to improve accuracy and relevance of the responses.</li>
+                                    <li>Implemented fallback mechanisms to escalate complex queries to human agents.</li>
+                                    <li>Technologies Used – Python, GPT-3, Web Development</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="resume-item">
+                            <div class="resume-content-box">
+                                <h4 class="h4 resume-item-title">Sales Prediction and Inventory Management</h4>
+                                <p class="resume-item-duration">May 2024</p>
+                                <ul class="resume-item-details">
+                                    <li>Developed a system for sales prediction and inventory management using historical sales data.</li>
+                                    <li>Utilized different machine learning algorithms to compare predictions and improve accuracy.</li>
+                                    <li>Implemented data preprocessing techniques to clean and prepare the data for analysis.</li>
+                                    <li>Contributed to optimizing inventory levels and reducing stockouts, leading to improved business operations.</li>
+                                    <li>Technologies Used – Python, Machine Learning, Data Preprocessing</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="resume-item">
+                            <div class="resume-content-box">
+                                <h4 class="h4 resume-item-title">Text Summarization using BERT</h4>
+                                <p class="resume-item-duration">Mar 2024</p>
+                                <ul class="resume-item-details">
+                                    <li>Created a text summarization tool using BERT to generate concise summaries of long documents.</li>
+                                    <li>Preprocessed large datasets of articles and papers to train the model effectively.</li>
+                                    <li>Implemented the tool in a web application for user-friendly interaction and summary generation.</li>
+                                    <li>Evaluated the tool’s performance and made iterative improvements based on user feedback.</li>
+                                    <li>Technologies Used – Python, BERT, Text Summarization</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Contact Section -->
+                <section class="resume-section">
+                    <h3 class="h3 resume-title">Contact</h3>
+                    <ul class="resume-list">
+                        <li class="resume-item">
+                            <div class="resume-content-box">
+                                <h4 class="h4 resume-item-title">Get in Touch</h4>
+                                <p class="resume-item-details">Feel free to reach out to me via email or phone for any inquiries or opportunities. I am always excited to connect with like-minded professionals and explore new opportunities.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </article>
         </div>
-      
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
+    </main>
 
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:schalla6@umbc.edu" class="contact-link">schalla6@umbc.edu</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+15712461039" class="contact-link">+1 (571) 246-1039</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Baltimore, MD, USA</address>
-            </div>
-          </li>
-        </ul>
-        <div class="separator"></div>
-        <ul class="social-list">
-          <div class="social-line">
-            <li class="social-item">
-              <a href="https://www.linkedin.com/in/challasindurareddy/" class="social-link">
-                <img src="assets/images/Icons/linkedin.png" alt="linkedin" data-hover="assets/images/Icons/linkedin-white.png" class="social-image">
-              </a>
-            </li>
-            <li class="social-item">
-              <a href="https://github.com/Sindura06" class="social-link">
-                <img src="assets/images/Icons/github.png" alt="github" data-hover="assets/images/Icons/github-white.png" class="social-image">
-              </a>
-            </li>
-          </div>
-        </ul>
-      </div>
-    </aside>
-
-    <!-- #main-content -->
-    <div class="main-content">
-
-      <!-- #NAVBAR -->
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- #ABOUT -->
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <p>Hello! I'm Sindura Reddy Challa, a passionate Data Science Master's student with a knack for leadership and a strong business mindset. With a relentless drive to innovate and solve problems using technology, I thrive in creating robust solutions that make a real difference.</p>
-          <p>I believe in the power of data to transform ideas into reality and am always eager to tackle new challenges. Whether it's analyzing complex datasets or developing machine learning models, I am committed to delivering solutions that exceed expectations.</p>
-        </section>
-      </article>
-
-      <!-- #RESUME -->
-      <article class="resume" data-page="resume">
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-        <section class="resume-section">
-          <h3 class="h3 resume-title">Education</h3>
-          <ul class="resume-list">
-            <li class="resume-item">
-              <div class="resume-content-box">
-                <h4 class="h4 resume-item-title">University of Maryland, Baltimore County</h4>
-                <p class="resume-item-subtitle">Master of Professional Studies, Data Science</p>
-                <p class="resume-item-duration">May 2025</p>
-                <p class="resume-item-gpa">GPA: 3.95/4.0</p>
-                <p class="resume-item-details">Coursework: Introduction to Data Science, Data Management, Ethical Issues in Data Science, Introduction to Machine Learning, Leadership in Data Science, Big Data Processing, Large Language Models, Natural Language Processing.</p>
-              </div>
-            </li>
-            <li class="resume-item">
-              <div class="resume-content-box">
-                <h4 class="h4 resume-item-title">Jawaharlal Nehru Technological University</h4>
-                <p class="resume-item-subtitle">Bachelor of Technology, Information Technology</p>
-                <p class="resume-item-duration">May 2023</p>
-                <p class="resume-item-gpa">GPA: 8.52/10.0</p>
-                <p class="resume-item-details">Coursework: Data Structures, Database Management Systems, Operating Systems, Web Technologies, Software Engineering, Cloud Computing, Artificial Intelligence.</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="resume-section">
-          <h3 class="h3 resume-title">Projects</h3>
-          <ul class="resume-list">
-            <li class="resume-item">
-              <div class="resume-content-box">
-                <h4 class="h4 resume-item-title">Chatbot Development using GPT-3</h4>
-                <p class="resume-item-duration">Jul 2024</p>
-                <ul class="resume-item-details">
-                  <li>Developed an intelligent chatbot for customer support using OpenAI’s GPT-3.</li>
-                  <li>Integrated the chatbot into a web application to handle common customer queries and provide automated responses.</li>
-                  <li>Fine-tuned the model on domain-specific data to improve accuracy and relevance of the responses.</li>
-                  <li>Implemented fallback mechanisms to escalate complex queries to human agents.</li>
-                  <li>Technologies Used – Python, GPT-3, Web Development</li>
-                </ul>
-              </div>
-            </li>
-            <li class="resume-item">
-              <div class="resume-content-box">
-                <h4 class="h4 resume-item-title">Sales Prediction and Inventory Management</h4>
-                <p class="resume-item-duration">May 2024</p>
-                <ul class="resume-item-details">
-                  <li>Developed a system for sales prediction and inventory management using historical sales data.</li>
-                  <li>Utilized different machine learning algorithms to compare predictions and improve accuracy.</li>
-                  <li>Implemented data preprocessing techniques to clean and prepare the data for analysis.</li>
-                  <li>Contributed to optimizing inventory levels and reducing stockouts, leading to improved business operations.</li>
-                  <li>Technologies Used – Python, Machine Learning, Data Preprocessing</li>
-                </ul>
-              </div>
-            </li>
-            <li class="resume-item">
-              <div class="resume-content-box">
-                <h4 class="h4 resume-item-title">Text Summarization using BERT</h4>
-                <p class="resume-item-duration">Mar 2024</p>
-                <ul class="resume-item-details">
-                  <li>Created a text summarization tool using BERT to generate concise summaries of long documents.</li>
-                  <li>Preprocessed large datasets of articles and research papers to train the model.</li>
-                  <li>Applied transfer learning and fine-tuned BERT for the summarization task.</li>
-                  <li>Evaluated the model’s performance using metrics such as ROUGE scores and human evaluation.</li>
-                  <li>Technologies Used – Python, BERT, NLP</li>
-                </ul>
-              </div>
-            </li>
-            <li class="resume-item">
-              <div class="resume-content-box">
-                <h4 class="h4 resume-item-title">Healthcare Data Analysis and Disease Prediction</h4>
-                <p class="resume-item-duration">Jan 2024</p>
-                <ul class="resume-item-details">
-                  <li>Conducted a comprehensive analysis of healthcare data to identify key factors influencing patient outcomes.</li>
-                  <li>Used data visualization tools to present insights and trends.</li>
-                  <li>Developed machine learning models to predict the likelihood of diseases such as diabetes and heart disease based on patient medical history and lifestyle factors.</li>
-                  <li>Compared the performance of various algorithms, including logistic regression, decision trees, and neural networks.</li>
-                  <li>Technologies Used – Python, Logistic Regression, Decision Trees, Neural Networks</li>
-                </ul>
-              </div>
-            </li>
-            <li class="resume-item">
-              <div class="resume-content-box">
-                <h4 class="h4 resume-item-title">Federal Insights: Unveiling Trends in U.S. Contract Awards</h4>
-                <p class="resume-item-duration">Dec 2023</p>
-                <ul class="resume-item-details">
-                  <li>Proficient in acquiring and processing large-scale datasets from SAM.gov and FPDS using Python and pandas.</li>
-                  <li>Utilized Python data science libraries, including Pandas for data manipulation and Matplotlib and Seaborn for data visualization.</li>
-                  <li>Contributed valuable business insights, enabling informed decision-making by extracting actionable recommendations from the analyzed federal contract data.</li>
-                  <li>Technologies Used – Python</li>
-                </ul>
-              </div>
-            </li>
-            <li class="resume-item">
-              <div class="resume-content-box">
-                <h4 class="h4 resume-item-title">Audiobook using Python</h4>
-                <p class="resume-item-duration">Oct 2023</p>
-                <ul class="resume-item-details">
-                  <li>Utilized a range of Python libraries, including Pillow for image reading, PyMuPDF for PDF-to-image conversion, pytesseract for optical character recognition (OCR), and pygame for audio playback.</li>
-                  <li>Implemented voice-controlled functionality to enable users to interact with the audiobook system, including searching for news updates and controlling playback, enhancing accessibility and user experience.</li>
-                  <li>Technologies Used – Python</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- Professional Experience Section -->
-        <section class="resume-section">
-          <h3 class="h3 resume-title">Professional Experience</h3>
-          <ul class="resume-list">
-            <li class="resume-item">
-              <div class="resume-content-box">
-                <h4 class="h4 resume-item-title">Knowledge Solutions India, Remote: Summer Internship</h4>
-                <p class="resume-item-duration">Apr 2021 - Jun 2021</p>
-                <ul class="resume-item-details">
-                  <li>Applied supervised machine learning techniques to build a predictive model.</li>
-                  <li>Utilized Python libraries, including NumPy, Pandas, and Scikit-Learn, for data analysis and model development.</li>
-                  <li>Employed data visualization techniques using Matplotlib and Seaborn to create insightful visual representations of the dataset, aiding in the understanding of key patterns and relationships in the data.</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <!-- #CONTACT -->
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="contact-text">
-          <p>Feel free to reach out to me via email or phone. You can also connect with me on LinkedIn or GitHub.</p>
-        </section>
-        <ul class="contact-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:schalla6@umbc.edu" class="contact-link">schalla6@umbc.edu</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+15712461039" class="contact-link">+1 (571) 246-1039</a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Baltimore, MD, USA</address>
-            </div>
-          </li>
-        </ul>
-      </article>
-
-    </div>
-  </main>
-  
-  <script src="./assets/js/main.js"></script>
-
+    <!-- ionicons -->
+    <script src="https://unpkg.com/ionicons@5.8.1/dist/ionicons/ionicons.esm.js" type="module"></script>
+    <script src="https://unpkg.com/ionicons@5.8.1/dist/ionicons/ionicons.js"></script>
+    <!-- custom js link -->
+    <script src="./assets/js/app.js" type="module"></script>
 </body>
 
 </html>
