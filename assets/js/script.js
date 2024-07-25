@@ -1,10 +1,9 @@
-// JavaScript to handle navigation and any interactivity
-
 document.addEventListener('DOMContentLoaded', () => {
     const sidebarBtn = document.querySelector('[data-sidebar-btn]');
     const sidebarInfoMore = document.querySelector('.sidebar-info_more');
     const navbarLinks = document.querySelectorAll('.navbar-link');
     const pages = document.querySelectorAll('[data-page]');
+    const sections = Array.from(pages);
   
     // Toggle sidebar contacts
     sidebarBtn.addEventListener('click', () => {
@@ -22,6 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show the corresponding page
         pages.forEach(page => page.classList.remove('active'));
         pages[index].classList.add('active');
+  
+        // Smooth scroll to the section
+        window.scrollTo({
+          top: pages[index].offsetTop,
+          behavior: 'smooth'
+        });
       });
     });
   
@@ -36,5 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = img.src.replace('-white', '');
       });
     });
-  });
   
+    // Active link highlighting based on scroll position
+    window.addEventListener('scroll', () => {
+      let index = sections.length;
+  
+      while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+  
+      navbarLinks.forEach((link) => link.classList.remove('active'));
+      navbarLinks[index].classList.add('active');
+    });
+});
